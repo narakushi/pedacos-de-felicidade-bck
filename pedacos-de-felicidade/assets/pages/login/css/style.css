@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+/* faixa superior*/
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #f0cdab;
+  padding: 16px;
+  border-bottom: 4px solid;
+  /* Define a borda com cor preta */
+  border-color: #f5938b;
+  font-size: 1.8rem;
+  border-radius: 0 0 3rem 3rem;
+  height: 7.5rem;
+}
+
+.header .canto-superior-esquerdo{
+  width: 15rem;
+  height: 5rem;
+}
+
+/* Estilos do menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin: 50;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: #4f381b;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  /* verificar margem home do menu */
+}
+
+/* ok */
+li a:hover {
+  background-color: #f5938b;
+  border-radius: 10px;
+}
+
+/*conteúdo principal*/
+.container {
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  padding: 40px;
+  justify-content: center;
+}
+
+.form {
+  background-color: #f0cdab;
+  border-radius: 8px;
+  border: 1px solid #e82d46;
+  overflow: hidden;
+  height: max-content;
+}
+
+.form-header {
+  font-size: 1.8rem;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f5938b;
+  color: #4f3b1b;
+}
+
+.form-content {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 100px;
+  gap: 15px;
+}
+
+.form-group {
+  width: 400px;
+}
+
+.control-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(79, 56, 27, 0.35);
+  background-color: #f5f0dd;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  padding-left: 50px;
+}
+
+.control-input::placeholder {
+  color: #4f3b1b;
+}
+
+/* faixa inferior ok*/
+
+.control-input[icon="nome"],
+.control-input[icon="email"],
+.control-input[icon="senha"] {
+  background-image: url("nome.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+.form-checkbox {
+  display: flex;
+  gap: 5px;
+}
+
+.form-checkbox>input[type="checkbox"] {
+  border: 1px solid #4f381b;
+}
+
+.form-text {
+  color: #4f381b;
+}
+
+.form-text>span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  border: 3px solid #c4c4c4;
+}
+
+.btn-primary {
+  border-color: #f5938b;
+  background-color: #830415;
+  color: #f5f0dd;
+}
+
+.footer {
+  border-radius: 3rem 3rem 0 0;
+  background-color: #f0cdab;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px 30px 20px;
+}
+
+.footer-logo {
+  align-self: center;
+  width: 200px;
+  right: 50px;
+  position: relative;
+}
+
+.footer-infos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-text {
+  color: #4f381b;
+
+  font-size: 20px;
+  text-align: center;
+}

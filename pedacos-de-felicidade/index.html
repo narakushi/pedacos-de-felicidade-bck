@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedaços de Felicidade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="/bolos/bolos.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="./assets/imgs/logo.png" alt="logo">
+            </div>
+            <ul class="nav-bar">
+                <li><a href=".//index.html">Home</a></li>
+                <li><a href=".//assets/pages/produtos/index.html">Produtos</a></li>
+                <li><a href=".//assets/pages/about-us/index.html">Sobre Nós</a></li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <button class="login"><a href=".//assets/pages/login/login.html">Login</a></button>
+            <p>|</p>
+            <button class="sign-up"><a href=".//assets/pages/cadastro/cadastro.html">Cadastre-se</a></button>
+            <button class="car" onclick="toggleCart()"><img src="./assets/imgs/carrinho.png" alt="carrinho"></button>
+            <span id="nCar" class="car">0</span>
+        </div>
+
+        <div class="cart">
+            <div class="header-cart">
+                <h2>Seu Carrinho</h2>
+                <img src="./assets/imgs/favicon.ico" alt="">
+            </div>
+
+            <div class="cart-items">
+                <!--
+                <div class="cart-item">
+                    <img class="item-i" src="./assets/imgs/bolo02.png" alt="bolo-de-morango">
+                    <div class="cart-details">
+                        <span class="title-item-cart">Bolo de Morango</span>
+                        <div class="selector-qtd">
+                            <i class="fa-solid fa-minus deduct-qtd"></i>
+                            <input type="text" value="2" class="cart-item-qtd">
+                            <i class="fa-solid fa-plus add-qtd"></i>
+                            <span class="cart-item-price">R$32.69</span>
+                        </div>
+                    </div>
+                    <span class="btn-delete">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img class="item-i" src="./assets/imgs/bolo03.png" alt="bolo-de-morango">
+                        <div class="cart-details">
+                            <span class="title-item-cart">Bolo de Formigueiro</span>
+                            <div class="selector-qtd">
+                                <i class="fa-solid fa-minus deduct-qtd"></i>
+                                <input type="text" value="1" class="cart-item-qtd">
+                                <i class="fa-solid fa-plus add-qtd"></i>
+                                <span class="cart-item-price">R$20.00</span>
+                            </div>
+                        </div>
+                        <span class="btn-delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+
+                </div>
+                -->
+            </div>
+            <div class="cart-total">
+                <div class="your-total">
+                    <strong>Seu Total</strong>
+                    <span class="cart-price-total">
+                        $00.00
+                    </span>
+                </div>
+                <a href=".//assets/pages/carrinho/index.html" class="to-pay">Ir para o carrinho<img
+                        class="car" src="./assets/imgs/carrinho.png" alt="carrinho"></a>
+            </div>
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href=".//index.html">Home</a></li>
+            <li><a href=".//assets/pages/produtos/index.html">Produtos</a></li>
+            <li><a href=".//assets/pages/about-us/index.html">Sobre Nós</a></li>
+            <li>
+                <button class="login"><a href="./assets/pages/login/login.html">Login</a></button>
+            </li>
+            <li>
+                <button class="sign-up"><a href="./assets/pages/cadastro/cadastro.html">Cadastre-se</a></button>
+            </li>
+            <li><a href="./assets/pages/carrinho/index.html"><button class="car"><img
+                src="./assets/imgs/carrinho.png" alt="carrinho"></a></li>
+        </div>
+        <div class="toggle-btn">
+            <img src="./assets/imgs/menu.svg" alt="menu">
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div class="highlights">
+            <div class="child-h">
+                <img class="star" src="./assets/imgs/star.png" alt="estrelinha">
+                <p>Destaques</p>
+                <img class="star" src="./assets/imgs/star.png" alt="estrelinha">
+            </div>
+            <div class="products">
+                <div class="cake">
+                    <img class="product-img" src="./assets/imgs/bolo01.png" alt="bolo-chocolate">
+                    <p class="product-title">Bolo de Chocolate</p>
+                    <p class="product-price">R$22.50</p>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+                <div class="cake">
+                    <img class="product-img" src="./assets/imgs/bolo02.png" alt="bolo-morango">
+                    <p class="product-title">Bolo de Morango</p>
+                    <p class="product-price">R$32.69</p>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+                <div class="cake">
+                    <img class="product-img" src="./assets/imgs/bolo03.png" alt="bolo-formigueiro">
+                    <p class="product-title">Bolo de Formigueiro</p>
+                    <p class="product-price">R$20.00</p>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+                <div class="cake">
+                    <img class="product-img" src="./assets/imgs/bolo04.png" alt="bolo-morango">
+                    <p class="product-title">Bolo de Cenoura</p>
+                    <p class="product-price">R$23.90</p>
+                    <button class="btn-buy">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img src="./assets/imgs/logo.png" alt="logo-footer">
+        </div>
+        <div class="container-footer">
+            <div class="data-footer">
+                <img src="./assets/imgs/address.png" alt="endereco-icon">
+                <p>
+                    Rua Francisco Batista
+                    Centro - Alagoinhas/BA
+                </p>
+            </div>
+            <div class="data-footer">
+                <img src="./assets/imgs/wpp.png" alt="WhatsAppicon">
+                <p>
+                    (75) 99888-8888
+                    (75) 99944-4444
+                </p>
+            </div>
+            <div class="data-footer">
+                <img src="./assets/imgs/email.png" alt="e-mail">
+                <p>ouvidoria
+                    @pedacofelicidade.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

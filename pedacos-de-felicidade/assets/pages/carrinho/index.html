@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedaços de Felicidade</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script async src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="./assets/img/logotipo.png" alt="logo">
+      </div>
+      <ul class="nav-bar">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="../produtos/index.html">Produtos</a></li>
+        <li><a href="../about-us/index.html">Sobre Nós</a></li>
+      </ul>
+    </div>
+
+
+    <div class="perfil-carrinho">
+      <div class="perfil">
+        <img class="img-perfil" src="./assets/img/perfil.png" alt="perfil">
+        <p> Oi, <span class="nome-usuario">Jessica</span></p>
+      </div>
+      <button><img class="carrinho" src="./assets/img/carrinho.png" alt="carrinho"></button>
+      <span id="nCar" class="carrinho">0</span>
+    </div>
+
+    <div class="cart">
+      <div class="header-cart">
+        <h2>Seu Carrinho</h2>
+        <img src="./assets/img/cake-cart.png" alt="">
+      </div>
+
+      <div class="cart-items">
+        <!--
+          <div class="cart-item">
+              <img class="item-i" src="./assets/img/bolo02.png" alt="bolo-de-morango">
+              <div class="cart-details">
+                  <span class="title-item-cart">Bolo de Morango</span>
+                  <div class="selector-qtd">
+                      <i class="fa-solid fa-minus deduct-qtd"></i>
+                      <input type="text" value="2" class="cart-item-qtd">
+                      <i class="fa-solid fa-plus add-qtd"></i>
+                      <span class="cart-item-price">R$32.69</span>
+                  </div>
+              </div>
+              <span class="btn-delete">
+                  <i class="fa-solid fa-trash"></i>
+              </span>
+          </div>
+
+          <div class="cart-items">
+              <div class="cart-item">
+                  <img class="item-i" src="./assets/img/bolo01.png" alt="bolo-de-morango">
+                  <div class="cart-details">
+                      <span class="title-item-cart">Bolo de Formigueiro</span>
+                      <div class="selector-qtd">
+                          <i class="fa-solid fa-minus deduct-qtd"></i>
+                          <input type="text" value="1" class="cart-item-qtd">
+                          <i class="fa-solid fa-plus add-qtd"></i>
+                          <span class="cart-item-price">R$20.00</span>
+                      </div>
+                  </div>
+                  <span class="btn-delete">
+                      <i class="fa-solid fa-trash"></i>
+                  </span>
+              </div>
+
+          </div>
+          -->
+      </div>
+      <div class="cart-total">
+        <div class="your-total">
+          <strong>Seu Total</strong>
+          <span class="cart-price-total">
+            $00.00
+          </span>
+        </div>
+        <a href="http://127.0.0.1:5500/assets/pages/carrinho/index.html" class="to-pay">Ir para o carrinho<img
+            class="car" src="./assets/img/carrinho.png" alt="carrinho"></a>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <li><a href="/pedacos-de-felicidade/index.html">Home</a></li>
+      <li><a href="../produtos/index.html">Produtos</a></li>
+      <li><a href="../about-us/index.html">Sobre Nós</a></li>
+     <!--
+      <li><button class="login">Login</button></li>
+      <li><button class="sign-up">Cadastre-se</button></li>
+      -->
+      <li><a href="../carrinho/index.html"><button class="car"><img
+              src="./assets/img/carrinho.png" alt="carrinho"></a></li>
+    </div>
+    <div class="toggle-btn">
+      <img src="./assets/img/menu.svg" alt="menu">
+    </div>
+
+  </header>
+
+  <main class="content">
+    <div class="card">
+      <div class="title-card">
+        <h2>Seu Carrinho</h2>
+        <img src="./assets/img/cake-cart.png" alt="icone-bolo">
+      </div>
+      <div class="card-body">
+        <div class="barra-col">
+          <span class="col-cart">Produto</span>
+          <span class="col-cart">Preço</span>
+          <span class="col-cart">Quantidade</span>
+        </div>
+        <div class="dados-carrinho">
+
+          <div class="dados">
+            <img class="bolo" src="./assets/img/bolo01.png" alt="bolo-chocolate">
+            <p class="titulo-bolo">Bolo de Chocolate</p>
+            <span class="preco-bolo">R$32.50</span>
+            <div class="selector-qtd">
+              <i class="fa-solid fa-minus deduct-qtd"></i>
+              <input type="text" value="1" class="cart-item-qtd">
+              <i class="fa-solid fa-plus add-qtd"></i>
+            </div>
+            <span class="btn-delete">
+              <i class="fa-solid fa-trash del"></i>
+            </span>
+          </div>
+
+          <div class="dados">
+            <img class="bolo" src="./assets/img/bolo02.png" alt="bolo-chocolate">
+            <p class="titulo-bolo">Bolo de Chocolate</p>
+            <span class="preco-bolo">R$32.50</span>
+            <div class="selector-qtd">
+              <i class="fa-solid fa-minus deduct-qtd"></i>
+              <input type="text" value="1" class="cart-item-qtd">
+              <i class="fa-solid fa-plus add-qtd"></i>
+            </div>
+            <span class="btn-delete">
+              <i class="fa-solid fa-trash del"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-car">
+        <span class="col-cart">Seu Total</span>
+        <span class="preco-total">R$32.50</span>
+        <div class="botoes">
+          <button>Finalizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="logo-footer">
+      <img src="./assets/img/logotipo.png" alt="logo-footer">
+    </div>
+    <div class="container-footer">
+      <div class="data-footer">
+        <img src="./assets/img/endereco.png" alt="endereco-icon">
+        <p>
+          Rua Francisco Batista
+          Centro - Alagoinhas/BA
+        </p>
+      </div>
+      <div class="data-footer">
+        <img src="./assets/img/contato.png" alt="WhatsAppicon">
+        <p>
+          (75) 99888-8888
+          (75) 99944-4444
+        </p>
+      </div>
+      <div class="data-footer">
+        <img src="./assets/img/email.png" alt="e-mail">
+        <p>ouvidoria
+          @pedacofelicidade.com</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
